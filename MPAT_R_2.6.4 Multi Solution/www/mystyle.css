@@ -1,0 +1,75 @@
+.main-header .logo {
+  text-align: center; /* Aligns text to the left */
+  color: #1E1E1E; /* Makes font color black*/
+  font-family: 'Georgia', 'Garamond', 'Palatino';
+  font-weight: bold;
+  font-size: 20px; 
+}
+
+.myTitle {
+  text-align: center; /* Aligns text to the center */
+  color: #fff; /* Makes font color white*/
+  /* color: #1E1E1E; /* Makes font color black*/
+  background-color: #403f3f; /* Makes background gray*/
+  font-family: 'Georgia';
+  font-weight: 700;
+ }
+
+.myContent {
+  background-color: #1E1E1E; 
+  /*  background-color: #535C74; */
+  /* font-family: 'Garamond', 'Palatino';
+  /* color: white;  */ /* Makes font color white*/
+}
+
+/* This provides the styling to lock the Sidebar footer in place */
+.sidefooter{
+  position: fixed;
+  bottom:0;
+  padding: 50px;
+  z-index: 100}
+  
+  /* This locks the sidebar so it doesnt move when scrolling in the main window. */
+.side{
+	position: fixed;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 15px;
+  background: rgba(34, 34, 34, 0.95);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(34, 34, 34, 0.95);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* Gradient transparent - color - transparent */
+.d3-tip hr {
+    border: 0;
+    height: 1px;
+    margin: 6px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
